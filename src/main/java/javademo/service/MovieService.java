@@ -69,4 +69,12 @@ public class MovieService {
         .filter(movie -> movie.getImdbRating() >= request.getImdbRating())
         .toList();
   }
+
+/*
+  public static int[] filterDuplicates(int[] data) {
+    // Write your code here
+    // To debug: System.err.println("Debug messages...");
+    return Arrays.stream(data).distinct().collect(Collectors.toList());
+  }
+*/
 }
