@@ -1,5 +1,6 @@
 CREATE TABLE movie (
    movie_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+   poster_link VARCHAR(200),
    title VARCHAR(100),
    released_year INTEGER,
    certificate CHAR(10),
@@ -7,7 +8,7 @@ CREATE TABLE movie (
    genre VARCHAR(100),
    imdb_rating FLOAT,
    overview VARCHAR(500),
-   meta_score INTEGER,
+   meta_score FLOAT,
    director VARCHAR(100),
    actor1 VARCHAR(100),
    actor2 VARCHAR(100),

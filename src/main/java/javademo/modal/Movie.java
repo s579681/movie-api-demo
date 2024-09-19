@@ -21,7 +21,7 @@ public class Movie {
   private String genre;
   private float imdbRating;
   private String overview;
-  private int metaScore;
+  private float metaScore;
   private String director;
   private String actor1;
   private String actor2;
@@ -29,14 +29,17 @@ public class Movie {
   private String actor4;
   private int numberOfVotes;
   private int grossIncome;
+  private String posterLink;
 
 
   public Movie() {
   }
 
+
   public Movie(String title, int releasedYear, String certificate, String runtime, String genre,
       float imdbRating, String overview, int metaScore, String director, String actor1,
-      String actor2, String actor3, String actor4, int numberOfVotes, int grossIncome) {
+      String actor2, String actor3, String actor4, int numberOfVotes, int grossIncome,
+      String posterLink) {
     this.title = title;
     this.releasedYear = releasedYear;
     this.certificate = certificate;
@@ -52,6 +55,7 @@ public class Movie {
     this.actor4 = actor4;
     this.numberOfVotes = numberOfVotes;
     this.grossIncome = grossIncome;
+    this.posterLink = posterLink;
   }
 
   public String getTitle() {
@@ -82,7 +86,7 @@ public class Movie {
     return overview;
   }
 
-  public int getMetaScore() {
+  public float getMetaScore() {
     return metaScore;
   }
 
@@ -112,5 +116,9 @@ public class Movie {
 
   public int getGrossIncome() {
     return grossIncome;
+  }
+
+  public String getPosterLink() {
+    return this.posterLink;
   }
 }
